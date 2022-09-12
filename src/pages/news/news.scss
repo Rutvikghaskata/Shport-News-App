@@ -1,0 +1,129 @@
+.container {
+  display: flex;
+  flex-direction: column;   
+  height: 100vh;
+  background-color: #e3e3e6;
+  align-items: center;
+  overflow: scroll;
+  h1{
+    color:#1a184b;
+    margin-top:20px;
+    text-shadow: 2px 2px 8px  #1a184b;;
+  }
+  .news-container {
+    display: flex;
+    flex-direction: column;   
+    height: fit-content;
+    margin: 20px 0;
+    width: 50%;
+    background-color: #fff;
+    justify-content: center;
+    border-radius: 20px;
+    max-width: 1320px;
+    div {
+      display: flex;
+      text-decoration: none;
+      flex-direction: column;
+      margin: 30px 30px 10px 30px;
+      border-radius: 20px;
+
+      .news-image {
+        width: 100%;
+        border-radius: 15px;
+      }
+      .news-title {
+        margin-top: 20px;
+        color: #1a184b;
+        font-size: 25px;
+        font-weight: bold;
+      }
+      .news-description{
+        margin-top: 20px;
+        color: #1a184b90;
+        font-size: 16px;
+      }
+      .news-date{
+        margin-top: 40px;
+        color: #1a184b;
+        font-size: 25px;
+        font-size: 16px;
+      }
+      .news-hr{
+        height: 1px;
+        width:100%;
+        align-self:center;
+        background-color: #eee;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    .news-container {
+      width: 90%;
+      border-radius: 15px;
+      div {
+        margin: 20px;
+        .news-image {
+          border-radius: 15px;
+          width: 100%;
+        }
+        .news-title {
+          font-size: 22px;
+        }
+        .news-description{
+          margin-top: 20px;
+          color: #1a184b90;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    .news-container {
+      border-radius: 10px;
+      width: 95%;
+      div {
+        margin: 15px;
+        .news-image {
+          border-radius: 10px;
+          width: 100%;
+        }
+        .news-title {
+          font-size: 18px;
+        }
+        .news-description{
+          margin-top: 20px;
+          color: #1a184b90;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    .news-container {
+      width: 95%;
+      div {
+        margin: 15px;
+        .news-image {
+          width: 100%;
+        }
+        .news-title {
+          font-size: 18px;
+        }
+        .news-description{
+          margin-top: 20px;
+          color: #1a184b90;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
