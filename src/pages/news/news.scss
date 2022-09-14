@@ -1,18 +1,41 @@
 .container {
   display: flex;
-  flex-direction: column;   
+  flex-direction: column;
   height: 100vh;
   background-color: #e3e3e6;
   align-items: center;
   overflow: scroll;
-  h1{
-    color:#1a184b;
-    margin-top:20px;
-    text-shadow: 2px 2px 8px  #1a184b;;
+  h1 {
+    color: #1a184b;
+    margin-top: 20px;
+    text-shadow: 2px 2px 8px #1a184b;
   }
+  .header-btn {
+    display: flex;
+    margin-top: 20px;
+    .filter-btn {
+      background-color: #1a184b;
+      cursor: pointer;
+      border-width: 0;
+      padding: 10px 20px;
+      margin: 10px;
+      color: #fff;
+      border-radius: 20px;
+      transition: all .7s;
+      box-shadow:5px 5px 20px #1a184b;
+    }
+    .filter-btn:hover{
+      background-color: #fff;
+      color: #1a184b;
+    }
+    @media screen and (max-width: 701px) {
+      flex-direction: column
+    }
+  }
+
   .news-container {
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
     height: fit-content;
     margin: 20px 0;
     width: 50%;
@@ -37,21 +60,21 @@
         font-size: 25px;
         font-weight: bold;
       }
-      .news-description{
+      .news-description {
         margin-top: 20px;
         color: #1a184b90;
         font-size: 16px;
       }
-      .news-date{
+      .news-date {
         margin-top: 40px;
         color: #1a184b;
         font-size: 25px;
         font-size: 16px;
       }
-      .news-hr{
+      .news-hr {
         height: 1px;
-        width:100%;
-        align-self:center;
+        width: 100%;
+        align-self: center;
         background-color: #eee;
       }
     }
@@ -72,7 +95,7 @@
         .news-title {
           font-size: 22px;
         }
-        .news-description{
+        .news-description {
           margin-top: 20px;
           color: #1a184b90;
           font-size: 16px;
@@ -96,7 +119,7 @@
         .news-title {
           font-size: 18px;
         }
-        .news-description{
+        .news-description {
           margin-top: 20px;
           color: #1a184b90;
           font-size: 14px;
@@ -118,7 +141,7 @@
         .news-title {
           font-size: 18px;
         }
-        .news-description{
+        .news-description {
           margin-top: 20px;
           color: #1a184b90;
           font-size: 12px;
